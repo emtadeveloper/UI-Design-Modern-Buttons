@@ -2,6 +2,7 @@
 @import "./variable.css";
 @import "./fill.css";
 @import "./plus.css";
+@import "./close.css";
 *,
 body {
   font-family: "Akaya Telivigala", cursive;
