@@ -1,0 +1,13 @@
+/*
+
+inset ویژگی 
+سایه را به داخل باکس انتقال میدهد
+و اختیاری هستش 
+box-shadow : h-shadow  v-shadow  blur  spread  color  inset ;
+
+*/
+
+.fill:hover, .fill:focus {
+    box-shadow:  0 0 0 2em var(--hover) inset;
+}
+

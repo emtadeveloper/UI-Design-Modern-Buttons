@@ -1,0 +1,28 @@
+.fill {
+  --color: #a972cb;
+  --hover: #cb72aa;
+}
+.pulse {
+  --color: #ef6eae;
+  --hover: #ef8f6e;
+}
+.close {
+  --color: #ff7f82;
+  --hover: #ffdc7f;
+}
+.raise {
+  --color: #ffa260;
+  --hover: #e5ff60;
+}
+.up {
+  --color: #e4cb58;
+  --hover: #94e458;
+}
+.slide {
+  --color: #8fc866;
+  --hover: #66c887;
+}
+.offset {
+  --color: #19bc8b;
+  --hover: #1973bc;
+}
