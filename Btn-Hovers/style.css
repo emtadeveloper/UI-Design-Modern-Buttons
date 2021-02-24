@@ -1,8 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap");
 @import "./variable.css";
-@import "./fill.css";
-@import "./plus.css";
-@import "./close.css";
+@import "./css/fill.css";
+@import "./css/plus.css";
+@import "./css/close.css";
+@import "./css/offset.css";
+@import "./css/slide.css";
+@import "./css/up.css";
+@import "./css/raise.css";
 *,
 body {
   font-family: "Akaya Telivigala", cursive;
