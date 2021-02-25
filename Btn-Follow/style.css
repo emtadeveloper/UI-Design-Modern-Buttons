@@ -1,0 +1,22 @@
+@import "./left.css";
+@import "./center.css";
+@import "./right.css";
+*,
+body {
+  font-family: "Akaya Telivigala", cursive;
+}
+body {
+  color: #17181c;
+  background: #17181c;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+}
+.container {
+  /* background-color: red; */
+  display: flex;
+  width:900px;
+}

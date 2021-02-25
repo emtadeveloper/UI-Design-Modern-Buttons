@@ -1,0 +1,82 @@
+.center-right {
+  width: 350px;
+  text-align: left;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* ==========  Text Follow ========== */
+
+.center-right ul .text-right {
+  position: absolute;
+  background: #fff;
+  font-size: 20px;
+  color: #17181c;
+  line-height: 50px;
+  text-align: center;
+  pointer-events: none;
+  transition: opacity 0.5s 0.75s ease-in-out;
+}
+
+.center-right ul:hover .text-right {
+  opacity: 0;
+  transition: opacity 0.5s 0.125s ease-in-out;
+}
+
+/* ====================================== */
+
+.center-right ul {
+  list-style: none;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.center-right ul li {
+  display: inline-block;
+  height: 50px;
+  text-align: center;
+  width: 50px;
+  color: #5f6064;
+  background: white;
+  line-height: 55px;
+  margin: 0 -15px;
+  cursor: pointer;
+  transition: background-color 0.5s ease-in-out,
+    border-radius 0.5s 0.25s ease-in-out, margin 0.5s 0.25s ease-in-out;
+}
+.center-right ul i {
+  font-size: 25px;
+  opacity: 0;
+  transition: opacity 1.7s;
+}
+.center-right ul li:nth-child(1) {
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+}
+.center-right ul li:nth-child(5) {
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+/* ====================================== */
+
+.center-right ul li:hover {
+  color: #17181c;
+}
+
+.center-right ul:hover li i {
+  opacity: 1;
+}
+
+.center-right ul:hover li {
+  border-radius: 50px;
+  margin: 0 3px;
+}
+.center-right ul:hover .text-right {
+  opacity: 0;
+  transition: opacity 0.5s 0.125s ease-in-out;
+}
+
+/* ====================================== */
