@@ -1,0 +1,9 @@
+.pulse:hover, .pulse:focus {
+    animation: pulse 1s;
+    box-shadow: 0 0 0 1.5em rgba(255, 255, 255, 0);
+}
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 var(--hover);
+   }
+}
