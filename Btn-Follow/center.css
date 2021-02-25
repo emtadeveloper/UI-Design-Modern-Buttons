@@ -1,0 +1,82 @@
+.center-center {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* ==========  Text Follow ========== */
+  
+  .center-center ul .text-center {
+    position: absolute;
+    background: #fff;
+    font-size: 20px;
+    color: #17181c;
+    line-height: 50px;
+    text-align: center;
+    pointer-events: none;
+    transition: opacity 0.5s 0.75s ease-in-out;
+  }
+  
+  .center-center ul:hover .text-center {
+    opacity: 0;
+    transition: opacity 0.5s 0.125s ease-in-out;
+  }
+  
+  /* ====================================== */
+  
+  .center-center ul {
+    list-style: none;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+  .center-center ul li {
+    display: inline-block;
+    height: 50px;
+    text-align: center;
+    width: 50px;
+    color: #5f6064;
+    background: white;
+    line-height: 55px;
+    margin: 0 -15px;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out,
+      border-radius 0.5s 0.25s ease-in-out, margin 0.5s 0.25s ease-in-out;
+  }
+  .center-center ul i {
+    font-size: 25px;
+    opacity: 0;
+    transition: opacity 1.7s;
+  }
+  .center-center ul li:nth-child(1) {
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+  }
+  .center-center ul li:nth-child(5) {
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+  }
+  
+  /* ====================================== */
+  
+  .center-center ul li:hover {
+    color: #17181c;
+  }
+  
+  .center-center ul:hover li i {
+    opacity: 1;
+  }
+  
+  .center-center ul:hover li {
+    border-radius: 50px;
+    margin: 0 3px;
+  }
+  .center-center ul:hover .text-center{
+    opacity: 0;
+    transition: opacity 0.5s 0.125s ease-in-out;
+  }
+  
+  /* ====================================== */
+  
