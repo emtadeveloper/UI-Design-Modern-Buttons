@@ -2,6 +2,12 @@
 body {
   font-family: "Tanha", sans-serif;
   background: #17181c;
+  transition: 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 95%;
+  height: 95vh;
 }
 main {
   position: absolute;
@@ -31,6 +37,13 @@ label {
   transition: transform 0.2s, background-color 0.2s ease-out;
   user-select: none;
 }
+@media (max-width: 400px) {
+  label {
+    width: 200px;
+    padding: 12px 24px;
+    font-size: 16px;
+  }
+}
 label:before,
 label:after {
   content: "";
@@ -55,7 +68,6 @@ label:after {
   background-color: #277893;
   transition: opacity 0s 0.3s;
 }
-
 label span:last-child {
   display: none;
 }
@@ -79,7 +91,6 @@ input:checked + label span:first-child {
 input:checked + label span:last-child {
   display: inline;
 }
-
 @keyframes bounce-in {
   50% {
     width: 100%;
@@ -119,9 +130,8 @@ input:checked + label span:last-child {
 }
 @keyframes btn-complete {
   100% {
-    color: rgb(26, 173, 70);
-    background-color: rgb(26, 173, 70);
-    
+    color: #0be881;
+    background-color: #0be881;
   }
 }
 @keyframes check-in {
