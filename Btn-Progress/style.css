@@ -1,167 +1,62 @@
-@import url("https://v1.fontapi.ir/css/Tanha");
+@import "./css/progress.css";
+@import "./css/circleMenu.css";
+@import "./css/btnNavbar.css";
+@import "./css/menu.css";
+
+/* rest style */
+
+@font-face {
+  font-family: IRANSansWeb;
+  src: url(../../fonts/IRANSansWeb.eot) format("eot"),
+    url(../../fonts/IRANSansWeb.woff) format("woff"),
+    url(../../fonts/IRANSansWeb.woff2) format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+*,
 body {
-  font-family: "Tanha", sans-serif;
-  background: #17181c;
-  transition: 0.5s;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: IRANSansWeb;
+  direction: rtl;
+}
+a {
+  text-decoration: none;
+}
+li,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/* rest style */
+
+/* container style  */
+.container {
+  display: flex;
+  overflow: hidden;
+  width: 100vw;
+  background-color: rgb(36, 34, 34);
+  height: 100vh;
+}
+
+.wrapper-right,
+.wrapper-left {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.content-top,
+.content-bottom {
+  width: 100%;
+  height: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 95%;
-  height: 95vh;
 }
-main {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  text-align: center;
-}
-input {
-  display: none;
-}
-label {
-  display: block;
-  position: relative;
-  width: 250px;
-  margin: 0 auto;
-  padding: 12px 36px;
-  border-radius: 60px;
-  font-size: 22px;
-  color: white;
-  background-color: #3299bb;
-  z-index: 1;
-  outline: none;
-  cursor: pointer;
-  transform: translateZ(0);
-  transition: transform 0.2s, background-color 0.2s ease-out;
-  user-select: none;
-}
-@media (max-width: 400px) {
-  label {
-    width: 200px;
-    padding: 12px 24px;
-    font-size: 16px;
-  }
-}
-label:before,
-label:after {
-  content: "";
-  position: absolute;
-  top: calc(100% + 12px);
-  right: 0;
-  left: 0;
-  margin: auto;
-  width: 0;
-  height: 12px;
-  z-index: -1;
-  border-radius: 60px;
-  transform: translateZ(0);
-}
-label:before {
-  background-color: #78c2db;
-}
-label:after {
-  left: 12px;
-  right: auto;
-  opacity: 0;
-  background-color: #277893;
-  transition: opacity 0s 0.3s;
-}
-label span:last-child {
-  display: none;
-}
-input:checked + label {
-  background-color: #277893;
-  animation: btn-complete 0.2s 2.2s ease-out forwards;
-}
-input:checked + label:before {
-  animation: bounce-in 0.2s ease-out forwards,
-    bounce-out 0.2s 2s ease-out forwards, check-in 0.2s 2.3s ease-out forwards;
-}
-input:checked + label:after {
-  opacity: 1;
-  z-index: 3;
-  animation: fill-up 1.49s 0.31s linear forwards,
-    bounce-out 0.2s 2s ease-out forwards;
-}
-input:checked + label span:first-child {
-  display: none;
-}
-input:checked + label span:last-child {
-  display: inline;
-}
-@keyframes bounce-in {
-  50% {
-    width: 100%;
-  }
-  100% {
-    width: calc(100% - 12px * 2);
-  }
-}
-@keyframes bounce-out {
-  0% {
-    left: 0;
-    right: 0;
-    width: calc(100% - 12px * 2);
-  }
-  50% {
-    width: 100%;
-  }
-  100% {
-    left: 0;
-    right: 0;
-    width: 0;
-  }
-}
-@keyframes fill-up {
-  20% {
-    width: 40%;
-  }
-  65% {
-    width: 50%;
-  }
-  90% {
-    width: 60%;
-  }
-  100% {
-    width: calc(100% - 12px * 2);
-  }
-}
-@keyframes btn-complete {
-  100% {
-    color: #0be881;
-    background-color: #0be881;
-  }
-}
-@keyframes check-in {
-  0% {
-    top: -22px;
-    bottom: 0;
-    width: 12px;
-    height: 24px;
-    margin: auto;
-    background-color: transparent;
-    border-radius: 0;
-    box-shadow: white 6px 6px 0 2px;
-    z-index: 2;
-    opacity: 0;
-    transform: scale(0.1) rotate(45deg);
-  }
-  50% {
-    transform: scale(2) rotate(45deg);
-  }
-  100% {
-    top: -22px;
-    bottom: 0;
-    width: 12px;
-    height: 24px;
-    margin: auto;
-    background-color: transparent;
-    border-radius: 0;
-    box-shadow: white 6px 6px 0 2px;
-    z-index: 2;
-    opacity: 1;
-    transform: scale(1) rotate(45deg);
-  }
-}
+
+/* container style  */

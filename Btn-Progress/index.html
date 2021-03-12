@@ -5,14 +5,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"
+  ></script>
     <title>Btn Progress</title>
   </head>
   <body>
-    <main>
-      <input type="checkbox" id="select" /><label for="select"
-        ><span>کلیک کنید</span><span>... در حال انجام</span></label
-      >
-    </main>
+    <div class="container">
+      <div class="wrapper-right">
+       <div class="content-top">
+        <main>
+          <input type="checkbox" id="select" /><label for="select"
+            ><span>کلیک کنید</span><span>... در حال انجام</span></label
+          >
+       </div>
+       <div class="content-bottom">
+        <div class="menu-container">
+          <div class="button">
+            فهرست
+            <span class="fas fa-bars"></span>
+          </div>
+          <ul>
+            <li><a href="#">خانه</a></li>
+            <li><a href="#">درباره ما</a></li>
+            <li><a href="#">صفحه اصلی</a></li>
+            <li><a href="#">محتوا</a></li>
+            <li><a href="#">بازخورد ها</a></li>
+          </ul>
+        </div>
+       </div>
+      </div>
+      <div class="wrapper-left">
+        <div class="content-top">    
+          <nav>
+            <a href="#">اقتصادی</a>
+            <a href="#">سیاسی</a>
+            <a href="#">نظامی</a>
+            <a href="#">فرهنگی</a>
+            <a href="#">امنیتی</a>
+            <div class="animation start-home"></div>
+          </nav>
+        </div>
+         <div class="content-bottom">
+          <section class="circle-menu" id="circle-menu">
+            <a class="menu-btn">
+              <i class="fa fa-plus"></i>
+            </a>
+            <div class="items-wrapper">
+              <a href="#" class="menu-item fa fa-home"></a>
+              <a href="#" class="menu-item fa fa-user"></a>
+              <a href="#" class="menu-item fa fa-chart-pie"></a>
+              <a href="#" class="menu-item fa fa-cog"></a>
+            </div>
+          </section>
+         
+         </div>  
+      </div>
+    </div>
   </body>
+<script src="./js/circle.js"></script>
+<script src="./js/btnNavbar.js"></script>
 </html>
